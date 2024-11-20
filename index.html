@@ -1,1 +1,98 @@
-Hello world
+
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Order burgers</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+        <header>
+            <h1>Välkommen till BurgerOnline</h1>
+        </header>   
+            <main>
+                <section>
+                <h2>Välj burgare</h2>
+                    <p>Välj hamburgare att beställa.</p>
+                    <div style="display: inline-block">
+                        <h3>Ostburgare</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUMJ011w5SFjVM7xO4f5i0HI4EA7ISQjtd5A&s" title="cheeseburger" style="width:200px">
+                        <ul>
+                            <li>Kcal</li>
+                            <li>Allergener: gluten, laktos</li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block">
+                        <h3>Veganburgare</h3>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-veggie-mcvegan-NEW:1-3-product-tile-desktop?wid=829&hei=515&dpr=off" title="veganburger" style="width:200px">
+                        <ul>
+                            <li>Kcal</li>   
+                            <li>Vegansk</li> 
+                            <li>Allergener: gluten</li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block">
+                        <h3>Sallad</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwr8-nL0sUigedz-kT2JrUu2eaLqso2MU3Cg&s" title="sallad" style="width:200px">
+                        <ul>
+                            <li>Kcal</li>   
+                            <li>Vegansk</li> 
+                            <li>Allergener: gluten</li>
+                        </ul>
+                    </div>           
+                </section>
+                <section>
+                    <h2>Kundinformation</h2>
+                    <p>Fyll i nödvändig information.</p>
+                    <h3>Leveransinformation</h3>
+                    <p>
+                        <label for="fullname">Full name</label><br>
+                        <input type="text" id="fullname" name="fn" required="required" placeholder="First and Last name">
+                    </p>
+                    <p>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                    </p>
+                    <p>
+                        <label for="streetname">Street name</label><br>
+                        <input type="text" id="streetname" name="sn" required="required" placeholder="Name of street">
+                    </p>
+                    <p>
+                        <label for="housenumber">House number</label><br>
+                        <input type="integer" id="housenumber" name="hnr" required="required" placeholder="House address">
+                    </p>
+                    <p>
+                        <label for="payment">Payment</label><be>
+                        <select id="payment" name="pay">
+                            <option>Credit card</option>
+                            <option>Swish</option>
+                            <option>Bill</option>
+                            <option>Part payment</option>
+                        </select>
+                     </p>
+                     <p>
+                        <legend>Select gender:</legend>
+                        <div>
+                        <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked>
+                        <label for="undisclosed">Undisclosed</label>
+                        </div>
+                        <div>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        </div>
+                        <div>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        </div>
+                        </select>
+                     </p>
+                </section>
+                <button type="submit order">
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/send-button-3d-icon-download-in-png-blend-fbx-gltf-file-formats--sending-pack-user-interface-icons-7520519.png?f=webp" style="width:20px">
+                    Send my order
+                  </button>
+            </main>
+            <footer>
+            <hr>&copy;Burgers</hr>
+            </footer>
+           </body>
+</html>
