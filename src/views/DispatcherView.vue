@@ -2,7 +2,10 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          <p>{{ key }}: {{order.orderItems}} </p>
+          <p id="orderDetails">
+          {{order.details.orderName}}({{order.details.orderEmail}}{{order.details.orderGender}})
+          </p>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
@@ -13,6 +16,7 @@
       </div>
     </div>
   </template>
+
   <script>
   import io from 'socket.io-client'
   const socket = io("localhost:3000");
@@ -32,10 +36,10 @@
       clearQueue: function () {
         socket.emit('clearQueue');
       },
-      changeStatus: function(orderId) {
+      /*changeStatus: function(orderId) {
         socket.emit('changeStatus', {orderId: orderId, status: "Annan status"});
 
-      }
+      }*/
     }
   }
   </script>
@@ -49,6 +53,8 @@
     background: rgba(255,255,255, 0.5);
     padding: 1em;
   }
+
+
   #dots {
     position: relative;
     margin: 0;
@@ -63,7 +69,7 @@
   #dots div {
     position: absolute;
     background: black;
-    color: white;
+    color: red;
     border-radius: 10px;
     width:20px;
     height:20px;

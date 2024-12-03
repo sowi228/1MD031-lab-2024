@@ -1,0 +1,129 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+   <head>
+       <title>Order burgers</title>
+       <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="public\css\style.css">
+   </head>
+
+   <body>
+        <header  id="topsection" > 
+            <img src="public/img/Background.jpg" alt="Header Background">
+            <h1>Welcome to O'Donalds</h1>
+        </header>   
+
+        <main>
+            <section class="common-section" id="burger-menu">
+                <h2>Menu</h2>
+                <p>Select which items to order.</p>
+                <div class="wrapper"
+                    style="display: inline-block">
+                    
+
+                    <div class="box cheeseburger"
+                        style="display: inline-block">
+                        <h3>O'Cheese</h3>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-bigmac-NY2:product-header-desktop?wid=829&hei=455&dpr=off" 
+                            alt="Cheese burger"
+                            title="cheeseburger" 
+                            style="width:200px; height:150px;">
+                        <ul class="iteminfo">
+                            <li>Kcal: 500</li>   
+                            <li>Vegan</li> 
+                            <li>Allergens: <span id="allergens">gluten</span></li>
+                        </ul>
+                    </div>
+                    <div class="box veganburger"
+                        style="display: inline-block">
+                        <h3>O'Vegan</h3>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-veggie-mcvegan-NEW:1-3-product-tile-desktop?wid=829&hei=515&dpr=off" 
+                            alt="Vegan burger"
+                            title="veganburger" 
+                            style="width:200px; height:150px;">
+                        <ul class="iteminfo">
+                            <li>Kcal: 500</li>   
+                            <li>Vegan</li> 
+                            <li>Allergens: <span id="allergens">gluten</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="box sallad"
+                        style="display: inline-block">
+                        <h3>O'Sallad</h3>
+                        <img src="https://mcdonalds.com.mt/wp-content/uploads/2024/06/CAESAR-CRISPY-CHICKEN-SALAD-WEBSITE-IMG.jpg" 
+                            alt="Sallad"
+                            title="sallad" 
+                            style="width:200px; height:150px;">
+                        <ul class="iteminfo">
+                            <li>Kcal:300</li>   
+                            <li>Vegetarian</li> 
+                            <li>Allergens: <span id="allergens">lactose</span></li>
+                        </ul>
+                    </div>   
+                </div>        
+            </section>
+            
+            <section class="common-section" id="info">
+                <h2>Customer information</h2>
+                <p>Fill en necessary information.</p>
+                
+                <form>
+                    <fieldset>
+                        <h3>Delivery information</h3>
+                            <p>
+                                <label for="fullname">Full name</label><br>
+                                <input type="text" id="fullname" name="fn" required="required" placeholder="First and Last name">
+                            </p>
+                            <p>
+                                <label for="email">E-mail</label><br>
+                                <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                            </p>
+                            <p>
+                                <label for="streetname">Street name</label><br>
+                                <input type="text" id="streetname" name="sn" required="required" placeholder="Name of street">
+                            </p>
+                            <p>
+                                <label for="housenumber">House number</label><br>
+                                <input type="number" id="housenumber" name="hnr" required="required" placeholder="House address">
+                            </p>
+                            <p>
+                                <label for="payment">Payment</label><br>
+                                <select id="payment" name="pay">
+                                    <option>Credit card</option>
+                                    <option>Swish</option>
+                                    <option>Bill</option>
+                                    <option>Part payment</option>
+                                </select>
+                            </p>
+                            <p>
+                                <legend>Select gender:</legend>
+                                    <div>
+                                        <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked>
+                                        <label for="undisclosed">Undisclosed</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Male</label>
+                                    </div> 
+                            </p>
+                    </fieldset>
+                    <button type="submit">
+                        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/send-button-3d-icon-download-in-png-blend-fbx-gltf-file-formats--sending-pack-user-interface-icons-7520519.png?f=webp" 
+                            alt="Send button"
+                            style="width:20px"/>
+                            Send my order
+                    </button>
+                </form>
+            </section> 
+        </main>
+        <footer>
+            <hr>&copy;2024 O'Donalds
+        </footer>
+    </body>
+</html>

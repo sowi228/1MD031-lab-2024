@@ -31,7 +31,7 @@ main, header, footer, nav ul {
     margin: 1em;
 } */
 
-/*header {
+header {
     /*background-image: url("../img/polacks.jpg");
     background-size: cover;*/
    /* overflow: hidden;
@@ -59,7 +59,7 @@ header h1 {
     top:10%;
 
 }
-/*
+
 nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, 9.25em);
@@ -81,7 +81,7 @@ nav li {
     color: green;
     font-weight: bold;
 }
-*/
+
 .menu-items {
     color: #ff5500;
  }
